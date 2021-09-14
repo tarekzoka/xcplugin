@@ -12,4 +12,6 @@ opkg install --force-overwrite /var/volatile/tmp/xcplugin-forever_1.6_all.ipk
 wait
 opkg install --force-overwrite /tmp/xcplugin-forever_1.6_all.ipk 
 wait
+
+opkg install /tmp/*.ipk
 sleep 2;
