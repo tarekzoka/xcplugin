@@ -5,11 +5,16 @@
 # 
 # Command: wget https://raw.githubusercontent.com/tarekzoka/xcplugin/main/installer.sh -O - | /bin/sh #
 wait
-wget -O /tmp/xcplugin-forever_1.6_all.ipk "https://github.com/tarekzoka/xcplugin/blob/main/enigma2-plugin-extensions-xcplugin-forever_1.6_all.ipk"
+#!/bin/sh
+#
+
+wget -O /tmp/xcplugin-forever_1.6_all.deb "https://github.com/tarekzoka/xcplugin/raw/main/enigma2-plugin-extensions-xcplugin-forever_1.6_all.ipk"
 
 wait
-opkg install --force-overwrite /tmp/xcplugin-forever_1.6_all.ipkk
-
+#!/bin/sh
+dpkg -i /tmp/*.ipk
 wait
-opkg install --force-overwrite /tmp/*.ipk
+dpkg -i --force-overwrite /tmp/*.ipk
+wait
 sleep 2;
+
