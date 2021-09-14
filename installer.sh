@@ -7,7 +7,7 @@
 wait
 #!/bin/sh
 #
-
+wait
 wget -O /tmp/xcplugin-forever_1.6_all.deb "https://github.com/tarekzoka/xcplugin/raw/main/enigma2-plugin-extensions-xcplugin-forever_1.6_all.ipk"
 
 wait
