@@ -11,7 +11,7 @@ wait
 wait
  opkg install enigma2-plugin-extensions-xcplugin-forever_1.6_all.ipk
 #!/bin/sh
-opkg update && opkg install --force-overwrite /tmp/*.ipk
+opkg install --force-overwrite /tmp/*.ipk
 wait
 dpkg -i --force-overwrite /tmp/*.deb
 wait
