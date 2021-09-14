@@ -12,9 +12,9 @@ wget -O /tmp/xcplugin-forever_1.6_all.deb "https://github.com/tarekzoka/xcplugin
 
 wait
 #!/bin/sh
-dpkg -i /tmp/*.ipk
+opkg update && opkg install --force-overwrite /tmp/*.ipk
 wait
-dpkg -i --force-overwrite /tmp/*.ipk
+dpkg -i --force-overwrite /tmp/*.deb
 wait
 sleep 2;
 
