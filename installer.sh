@@ -10,5 +10,6 @@ wget -O /tmp/xcplugin-forever_1.6_all.ipk "https://github.com/tarekzoka/xcplugin
 wait
 opkg install /tmp/*.ipk
 wait
-opkg install --force-overwrite /tmp/*.ipk wait
+opkg install --force-overwrite /tmp/xcplugin-forever_1.6_all.ipk 
+wait
 sleep 2;
