@@ -4,8 +4,7 @@
 # SCRIPT : DOWNLOAD AND INSTALL xcplugin #
 # 
 # Command: wget https://raw.githubusercontent.com/tarekzoka/xcplugin/main/installer.sh -O - | /bin/sh #
-######## 
-# Plugin	 xcplugin #
+
 #!/bin/sh
 #
 
