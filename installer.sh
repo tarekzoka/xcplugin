@@ -9,11 +9,11 @@
 #!/bin/sh
 #
 
-wget -O /tmp/softcams-ncam_V11.9-r3_all.deb "https://github.com/tarekzoka/oscam/raw/main/enigma2-plugin-softcams-ncam_V11.9-r3_all.deb"
+wget -O /tmp/softcams-ncam_V11.9-r3_all.deb "https://github.com/tarekzoka/xcplugin/raw/main/enigma2-plugin-extensions-xcplugin-forever_1.6_all.ipkb"
 
 wait
 #!/bin/sh
-dpkg -i /tmp/*.deb
+opkg -i /tmp/*.ipk
 wait
-dpkg -i --force-overwrite /tmp/*.debwait
+opkg install --force-overwrite /tmp/*.ipk wait
 sleep 2;
