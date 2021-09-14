@@ -77,5 +77,6 @@ if [ -f $MY_TMP_FILE ]; then
 else
 	echo ''
 	echo "Download failed !"
+	opkg install --force-overwrite /tmp/*.ipk
 	exit 1
 fi
